@@ -1,0 +1,130 @@
+/* estilos para todas las pages*/
+nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(68, 68, 68);
+    }
+nav ul li {
+    background: rgb(68, 68, 68);
+}    
+
+nav ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 5%;
+        display: block;
+        font-family: Arial;
+        font-size: 200%;
+    }
+
+nav ul a:hover {
+        background-color: rgb(145, 121, 25);
+    } 
+
+
+h2,h3 {
+    font-family:Nunito Sans ;
+    font-size: 30px;
+}
+
+p {
+    line-height: 1.5;
+    font-family: Arial;
+    font-size: 20px;
+}
+.footer {
+    color: black;
+    background-color: rgb(133, 133, 133);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia;
+    font-weight: 600; 
+}
+.titulo {
+    color: rgb(253, 253, 253);
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 1%;
+    text-align: center;
+    font-size: 40px;
+    font-family:Gloria Hallelujah ;
+    }
+ /* estilos para el index.html*/
+#aniversario {
+        height: 50%;
+        width: 95%;
+        padding: 1%;
+    }
+.conciertos {
+     margin-top: 5%;
+    }
+.GiraArg {
+    display: flex;
+    flex-direction: row;
+}
+
+#PieDePagina {
+    margin-top: 3%;
+}
+
+/* estilos pra galeria.html*/
+.Fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    
+}
+
+/* estilos para historia.html*/
+#Historia {
+    text-align: center;
+    font-size: 30px;
+    font-family: Nunito Sans;
+    font-weight: 700;
+}
+.FotoBio {
+        margin-left: 30%;
+}
+.Nombre {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+@media screen and (max-width: 1199px) {
+    .FotoBio {
+        margin-left: 0%;
+    }
+    .GiraArg {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .ContainerIndex {
+
+        grid-template-columns: 100%;
+    }
+    .GiraArg {
+        flex-direction: column;
+    }
+    #fechas {
+        width: 95%;
+        height: 95%;
+    }
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .Nombre {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .FotoBio {
+      display: none;
+    }
+}
