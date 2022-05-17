@@ -85,6 +85,12 @@ p {
     font-family: Nunito Sans;
     font-weight: 700;
 }
+.logo {
+    transition: transform 4s;
+}
+.logo:hover {
+    transform: rotate(360deg);
+}
 .FotoBio {
         margin-left: 30%;
 }
