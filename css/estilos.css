@@ -93,6 +93,10 @@ p {
 }
 .FotoBio {
         margin-left: 30%;
+        transition: transform 1s;
+}
+.FotoBio:hover {
+    transform: scale(1.1);
 }
 .Nombre {
     display: grid;
